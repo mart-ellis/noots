@@ -30,6 +30,10 @@ const Sidebar = ({ setStarredFilter, setCategoryFilter, handleCategoryFilter, ca
 
     }
 
+    if (error) {
+        console.log(error);
+    }
+
     const userFirstName = currentUser?.displayName?.split(' ')[0];
 
     const handleShowAllNotes = () => {
@@ -46,7 +50,7 @@ const Sidebar = ({ setStarredFilter, setCategoryFilter, handleCategoryFilter, ca
     const starredActive = starredFilter;
 
     return (
-        <div className="col-span-1 md:col-span-2 xl:col-span-1 bg-gray-50 dark:bg-gray-800 text-gray-700 dark:text-gray-400 pb-6 md:pb-0">
+        <div className="col-span-1 md:col-span-2 xl:col-span-1 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-400 pb-6 md:pb-0">
             <div className="w-4/5 m-auto pt-10 flex flex-col justify-between h-full">
                 <div className="order-last md:order-first">
                     <div className="hidden md:block">
@@ -101,7 +105,7 @@ const Sidebar = ({ setStarredFilter, setCategoryFilter, handleCategoryFilter, ca
                             
                             <div className="flex items-center">
                                 <button type="button" onClick={handleLogOut}>
-                                    <LogoutIcon className="w-5 ml-2 text-gray-800" />
+                                    <LogoutIcon className="w-5 ml-2 text-gray-800 dark:text-gray-400" />
                                 </button>
                             </div>
                         </div>
