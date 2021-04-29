@@ -10,7 +10,7 @@ const Dashboard = () => {
     const {notes, sortBy, setSortBy} = useNotes();
     const categories = useCategories();
 
-    const [starredFilter, setStarredFilter] = useState(true);
+    const [starredFilter, setStarredFilter] = useState(false);
     const [categoryFilter, setCategoryFilter] = useState(null);
 
     const handleCategoryFilter = (category) => {
