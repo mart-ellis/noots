@@ -1,8 +1,8 @@
-# 📒 noots
+# 📒 Noots
 
-🚀  A note storage app with authentication and persistant state built using React (create-react-app framework).
+A note storage app with authentication and persistant state built using React (create-react-app framework).
 
-# Built using
+## Built using
 - 📦 React (create-react-app)
 - 🔑 Firebase Auth
 - 💾 Firestore
