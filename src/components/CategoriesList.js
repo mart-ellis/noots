@@ -5,7 +5,6 @@ import AddCategoryModal from './AddCategoryModal';
 import { useNotes } from '../context/NotesContext'; 
 import firebase from '../firebase/firebase';
 import { useAuth } from '../context/AuthContext';
-import deleteNote from '../helpers/deleteNote';
 
 const CategoriesList = ({ handleCategoryFilter, categoryFilter }) => {
     const [openAddCategoryModal, setOpenAddCategoryModal] = useState(false);
@@ -33,8 +32,6 @@ const CategoriesList = ({ handleCategoryFilter, categoryFilter }) => {
             console.log(`Error removing category: ${error}`);
         })
     }
-    
-    console.log(categoryFilter);
 
     return (
         <div className="">

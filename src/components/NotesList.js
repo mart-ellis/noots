@@ -1,8 +1,7 @@
 import React from 'react';
 import Note from './Note';
-import AddNote from './AddNote';
 import EmptyBox from '../assets/box.png'
-import { motion, AnimatePresence } from 'framer-motion';
+import { AnimatePresence } from 'framer-motion';
 
 const NotesList = ({notes, sortBy, setSortBy, categories, categoryFilter, starredFilter }) => {
     const notesFound = !!notes.length;
