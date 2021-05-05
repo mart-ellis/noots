@@ -35,7 +35,7 @@ const CategoriesList = ({ handleCategoryFilter, categoryFilter }) => {
 
     return (
         <div className="">
-            <ul className="mt-12 space-y-3">
+            <ul className="mt-8 md:mt-12 space-y-3">
                 <li className="flex items-center justify-between mb-3">
                     <div className="flex">
                         <CollectionIcon className="w-5 mr-2" />

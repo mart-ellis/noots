@@ -8,7 +8,7 @@ const NotesList = ({notes, sortBy, setSortBy, categories, categoryFilter, starre
 
     if (notesFound) {
         return (
-            <div className="bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-50 p-12 md:col-span-4 xl:col-span-5 max-h-full md:overflow-scroll">
+            <div className="bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-50 p-6 pb-20 md:p-12 md:pb-0 md:col-span-4 xl:col-span-5 max-h-full md:overflow-scroll">
                 <div className="flex items-center justify-between">
                     <h1 className="text-2xl font-bold">{categoryFilter ? categoryFilter : starredFilter ? 'Important' : 'All Notes'}</h1>
                     <div>
