@@ -3,7 +3,7 @@ import firebase from '../firebase/firebase';
 import moment from 'moment';
 import useCategories from '../helpers/useCategories';
 import { useAuth } from '../context/AuthContext';
-import Toggle from 'react-toggle';
+import { Switch } from '@headlessui/react';
 
 
 const AddNote = ({ closeModal }) => {
@@ -66,14 +66,26 @@ const AddNote = ({ closeModal }) => {
                 </div>
 
                 <div className="col-span-1">
-                    <label htmlFor="starred" className="block text-xs font-medium">Starred</label>
-                    <Toggle
-                    id='starred'
-                    defaultChecked={starred}
-                    onChange={(e) => setStarred(e.target.checked)} 
-                    className="mt-1.5"
-                    />                       
+                    <Switch.Group>
+                        <div className="flex-col items-center">
+                            <Switch.Label passive className="block text-xs font-medium">Starred</Switch.Label>
+                            <Switch
+                            checked={starred}
+                            onChange={setStarred}
+                            className={`${
+                                starred ? "bg-indigo-600" : "bg-gray-400"
+                            } mt-1.5 relative inline-flex items-center h-6 rounded-full w-11 transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500`}
+                            >
+                            <span
+                                className={`${
+                                starred ? "translate-x-6" : "translate-x-1"
+                                } inline-block w-4 h-4 transform bg-white rounded-full transition-transform`}
+                            />
+                            </Switch>
+                        </div>
+                    </Switch.Group>                 
                 </div>
+
             </div>
             <div className="mt-6 flex gap-3">
                 <button 
