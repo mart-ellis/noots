@@ -26,11 +26,11 @@ const Note = ({ note, color }) => {
         }}
         className="container h-72 relative bg-indigo-500 text-gray-50 dark:bg-gray-800 rounded-md p-3 shadow-md flex flex-col justify-between">
             <div className="rounded-l-sm w-6 h-3.5 absolute top-6 shadow-sm right-0" style={{ backgroundColor: color}}></div>
-            <div className="overflow-auto">
+            <div className="overflow-auto scrollbar-thin scrollbar-thumb-indigo-500 scrollbar-track-gray-700 scrollbar-thumb-rounded-full scrollbar-track-rounded-full">
                 <div className="flex justify-between items-center">
                     <h1 className="text-lg font-semibold clamp-1 my-2">{title}</h1>
                 </div>
-                <div className="mt-1 mb-3 overflow-auto">
+                <div className="pr-2.5 mt-1 mb-3 overflow-auto">
                     <p className="text-sm font-normal break-words leading-6 dark:text-gray-400">{content}</p>
                 </div>
             </div>

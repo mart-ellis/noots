@@ -14,13 +14,16 @@ module.exports = {
     },
   },
   variants: {
+    scrollbar: ['rounded'],
     extend: {
       ringWidth: ['hover'],
       ringColor: ['hover'],
-      display: ['dark']
+      display: ['dark'],
+
     }
   },
   plugins: [
     require('tailwindcss-line-clamp'),
+    require('tailwind-scrollbar'),
   ],
 }

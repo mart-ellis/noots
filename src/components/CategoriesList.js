@@ -42,7 +42,7 @@ const CategoriesList = ({ handleCategoryFilter, categoryFilter }) => {
                 </li>
 
                 <li>
-                    <ul className="pl-1.5 pr-1 mt-3 max-h-60 overflow-auto">
+                    <ul className="pl-1.5 pr-1 mt-3 max-h-60 overflow-auto scrollbar-thin scrollbar-thumb-indigo-500 scrollbar-track-gray-700 scrollbar-thumb-rounded-full scrollbar-track-rounded-full">
                     {categories && categories.map(category => {
 
                     const active = category.name === categoryFilter;
