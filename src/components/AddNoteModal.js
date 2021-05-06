@@ -49,10 +49,10 @@ export default function AddNoteModal({open, setOpen }) {
             leaveFrom="opacity-100 scale-100"
             leaveTo="opacity-0 scale-95"
           >
-            <div className="inline-block w-full max-w-md px-8 py-10 my-8 overflow-hidden text-left align-top md:align-middle transition-all transform bg-gray-800 text-gray-50 shadow-xl rounded-2xl">
+            <div className="inline-block w-full max-w-md px-8 py-10 my-8 overflow-hidden text-left align-top md:align-middle transition-all transform bg-gray-300 dark:bg-gray-800 text-gray-800 dark:text-gray-50 shadow-xl rounded-2xl">
               <Dialog.Title
                 as="h3"
-                className="text-lg font-medium leading-6 text-gray-50"
+                className="text-lg font-medium leading-6 text-gray-800 dark:text-gray-50"
               >
                 Add a New Note
               </Dialog.Title>

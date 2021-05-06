@@ -79,16 +79,16 @@ export default function AddNoteModal({open, setOpen }) {
             leaveFrom="opacity-100 scale-100"
             leaveTo="opacity-0 scale-95"
           >
-            <div className="inline-block w-full max-w-md px-8 py-10 my-8 overflow-hidden text-left align-middle transition-all transform bg-gray-800 text-gray-50 shadow-xl rounded-2xl">
+            <div className="inline-block w-full max-w-md px-8 py-10 my-8 overflow-hidden text-left align-middle transition-all transform bg-gray-300 dark:bg-gray-800 text-gray-800 dark:text-gray-50 shadow-xl rounded-2xl">
               <Dialog.Title
                 as="h3"
-                className="text-lg font-medium leading-6 text-gray-50 mb-6"
+                className="text-lg font-medium leading-6 text-gray-800 dark:text-gray-50 mb-6"
               >
                 Add a New Category
               </Dialog.Title>
               <div className="mt-2">
                 <form onSubmit={onSubmit}>
-                  <p className="text-sm text-gray-400 mt-1 mb-6">Please add your category name and colour below</p>
+                  <p className="text-sm text-gray-700 dark:text-gray-400 mt-1 mb-6">Please add your category name and colour below</p>
                   <div className="w-full mt-4">
                       <label className="block text-xs font-medium">Category Name</label>
                       <input required type="text" value={categoryName} onChange={e => setCategoryName(e.target.value)} placeholder="E.g finances" className="mt-1 bg-gray-100 text-gray-700 text-sm font-gray-600 py-1.5 px-2 block w-full shadow-sm border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"></input>

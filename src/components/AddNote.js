@@ -41,7 +41,7 @@ const AddNote = ({ closeModal }) => {
     }
 
     return (
-        <form onSubmit={onSubmit} className="mt-2 text-gray-300">
+        <form onSubmit={onSubmit} className="mt-2 text-gray-800 dark:text-gray-300">
 
             <div className="w-full mt-4">
                 <label htmlFor="title" className="block text-xs font-medium">Title</label>
