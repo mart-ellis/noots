@@ -29,7 +29,7 @@ const Dashboard = () => {
     }
 
     return (
-        <div className="grid grid-cols-1 md:grid-cols-6 h-screen">
+        <div className="grid grid-cols-1 md:grid-cols-6 md:h-screen">
             <Sidebar setStarredFilter={setStarredFilter} setCategoryFilter={setCategoryFilter} handleCategoryFilter={handleCategoryFilter} categoryFilter={categoryFilter} starredFilter={starredFilter} />
             <NotesList notes={filteredNotes} sortBy={sortBy} setSortBy={setSortBy} categories={categories} categoryFilter={categoryFilter} starredFilter={starredFilter}/>
         </div>
