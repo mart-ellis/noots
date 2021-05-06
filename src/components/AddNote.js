@@ -87,10 +87,10 @@ const AddNote = ({ closeModal }) => {
                 </div>
 
             </div>
-            <div className="mt-6 flex gap-3">
+            <div className="mt-6 flex">
                 <button 
                     type="submit"
-                    className="inline-flex justify-center px-8 py-3 text-sm font-medium text-gray-100 bg-green-400 border border-transparent rounded-md hover:bg-green-600 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500"
+                    className="mr-3 inline-flex justify-center px-8 py-3 text-sm font-medium text-gray-100 bg-green-400 border border-transparent rounded-md hover:bg-green-600 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500"
                 >
                     Add Note
                 </button>

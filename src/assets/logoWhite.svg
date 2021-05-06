@@ -2,6 +2,8 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg width="100%" height="100%" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
     <g transform="matrix(1,0,0,1,-4.64358,4.49716)">
-        <text x="3.183px" y="42.513px" style="font-family:'RobotoSlab-Regular_Medium', 'Roboto Slab';font-size:82px;fill:rgb(241,241,241);">n</text>
+        <g transform="matrix(82,0,0,82,3.18301,42.5127)">
+            <path d="M0.03,-0L0.03,-0.075L0.103,-0.09L0.103,-0.438L0.026,-0.453L0.026,-0.528L0.216,-0.528L0.223,-0.452C0.24,-0.479 0.262,-0.5 0.288,-0.515C0.315,-0.531 0.344,-0.538 0.377,-0.538C0.432,-0.538 0.474,-0.521 0.504,-0.488C0.535,-0.455 0.55,-0.403 0.55,-0.332L0.55,-0.09L0.623,-0.075L0.623,-0L0.358,-0L0.358,-0.075L0.427,-0.09L0.427,-0.331C0.427,-0.371 0.419,-0.399 0.403,-0.416C0.387,-0.433 0.363,-0.441 0.332,-0.441C0.308,-0.441 0.287,-0.436 0.269,-0.425C0.252,-0.414 0.237,-0.4 0.226,-0.381L0.226,-0.09L0.293,-0.075L0.293,-0L0.03,-0Z" style="fill:rgb(245,245,245);fill-rule:nonzero;"/>
+        </g>
     </g>
 </svg>
