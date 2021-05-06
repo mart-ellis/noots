@@ -93,8 +93,8 @@ const Sidebar = ({ setStarredFilter, setCategoryFilter, handleCategoryFilter, ca
                         <img src={logo} alt="Logo" className="w-7 dark:hidden" />
                     </div>
 
-                    <div className="flex gap-4 md:gap-0 md:w-full md:justify-between">
-                        <div className="flex items-center order-last md:order-first">
+                    <div className="flex md:w-full md:justify-between">
+                        <div className="flex mr-4 md:mr-0 items-center order-last md:order-first">
                             <div className="w-6">
                                 {currentUser.photoURL && (<img className="rounded-full" src={currentUser.photoURL} alt="User"></img>)}
                             </div>
