@@ -34,7 +34,7 @@ const NotesList = ({notes, sortBy, setSortBy, categories, categoryFilter, starre
         );
     } else {
         return (
-            <div className="col-span-5 h-full flex flex-col items-center justify-center dark:bg-gray-700">
+            <div className="col-span-5 h-full flex flex-col items-center justify-center dark:bg-gray-700 pb-20">
                 <img src={EmptyBox} alt="Empty Box" className="max-w-xs mb-4" />
                 <h1 className="text-center max-w-lg font-semibold text-2xl text-gray-800 dark:text-gray-50">Uh oh, no notes found! Add one or try another category 🚀</h1>
             </div>
