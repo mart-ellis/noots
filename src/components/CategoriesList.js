@@ -74,11 +74,9 @@ const CategoriesList = ({ handleCategoryFilter, categoryFilter }) => {
                     </ul>
                 </li>
 
-                <li className="flex items-center justify-between mb-3" onClick={openModal}>
-                    <div className="flex">
-                        <FolderAddIcon className="w-5 mr-2" />
-                        <p className="text-sm pt-0.5 font-medium dark:text-gray-100">Add Category</p>
-                    </div>
+                <li className="flex items-center mb-3" onClick={openModal}>
+                    <FolderAddIcon className="w-5 mr-2" />
+                    <p className="text-sm pt-0.5 font-medium dark:text-gray-100">Add Category</p>
                 </li>
             </ul>
 
