@@ -94,7 +94,7 @@ const Sidebar = ({ setStarredFilter, setCategoryFilter, handleCategoryFilter, ca
                     </div>
 
                     <div className="flex md:w-full md:justify-between">
-                        <div className="flex mr-4 md:mr-0 items-center order-last md:order-first">
+                        <div className="flex items-center order-last md:order-first">
                             <div className="w-6">
                                 {currentUser.photoURL && (<img className="rounded-full" src={currentUser.photoURL} alt="User"></img>)}
                             </div>
@@ -105,7 +105,7 @@ const Sidebar = ({ setStarredFilter, setCategoryFilter, handleCategoryFilter, ca
                         <div className="flex gap-2 md:gap-0 order-first md:order-last">
                             <button type="button" onClick={() => setTheme(colorTheme)} className="focus:outline-none">{colorTheme === 'dark' ? '🌒' : '☀️'}</button>
                             
-                            <div className="flex items-center">
+                            <div className="flex items-center mr-3">
                                 <button type="button" onClick={handleLogOut}>
                                     <LogoutIcon className="w-5 ml-2 text-gray-800 dark:text-gray-400" />
                                 </button>
