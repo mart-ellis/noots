@@ -36,11 +36,9 @@ const CategoriesList = ({ handleCategoryFilter, categoryFilter }) => {
     return (
         <div className="">
             <ul className="mt-8 md:mt-12 space-y-3">
-                <li className="flex items-center justify-between mb-3">
-                    <div className="flex flex-1 flex-nowrap">
-                        <CollectionIcon className="w-5 mr-2" />
-                        <p className="text-sm pt-0.5 font-medium dark:text-gray-100">Categories</p>
-                    </div>
+                <li className="flex items-center mb-3">
+                    <CollectionIcon className="w-5 mr-2" />
+                    <p className="text-sm pt-0.5 font-medium dark:text-gray-100">Categories</p>
                 </li>
 
                 <li>
