@@ -28,7 +28,7 @@ const Note = ({ note, color }) => {
             <div className="rounded-l-sm w-6 h-3.5 absolute top-6 shadow-sm right-0" style={{ backgroundColor: color}}></div>
             <div className="overflow-auto scrollbar-thin scrollbar-thumb-indigo-500 scrollbar-track-gray-700 scrollbar-thumb-rounded-full scrollbar-track-rounded-full">
                 <div className="flex justify-between items-center">
-                    <h1 className="text-lg font-semibold clamp-1 my-2">{title}</h1>
+                    <h1 className="text-lg font-semibold clamp-1 my-2 dark:text-gray-200">{title}</h1>
                 </div>
                 <div className="pr-2.5 mt-1 mb-3 overflow-auto">
                     <p className="text-sm font-normal break-words leading-6 dark:text-gray-400">{content}</p>
@@ -36,7 +36,7 @@ const Note = ({ note, color }) => {
             </div>
             <div className="flex justify-between items-center px-2 pt-1 text-indigo-300 z-10 bg-gray-200 dark:bg-gray-800 dark:text-gray-400">
                 <div className="w-1/3 flex justify-start">
-                    <p className="text-xs font-light text-gray-800 whitespace-nowrap">{addedFormatted}</p>
+                    <p className="text-xs font-light text-gray-800 dark:text-gray-400 whitespace-nowrap">{addedFormatted}</p>
                 </div>
                 <div className="w-1/3 flex justify-center">
                     <button onClick={() => updateStarred(currentUser.uid, id, !starred)} className="focus:outline-none focus:ring-2 focus:ring-indigo-500 rounded-md">
